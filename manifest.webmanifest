@@ -1,0 +1,21 @@
+{
+  "id": "/roehre-preview/",
+  "name": "TV-Röhre – Live-TV, Programm und Radio",
+  "short_name": "TV-Röhre",
+  "description": "Über 50 frei empfangbare Sender live, Programm von heute, rund 970 Radiosender, Filme und der House-Ordner. Kostenlos, ohne Konto.",
+  "lang": "de-DE",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#050506",
+  "theme_color": "#050506",
+  "categories": ["entertainment", "video", "news"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
