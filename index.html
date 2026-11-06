@@ -46,6 +46,13 @@
       content="Über 50 Sender live, Programm von heute, 970 Radiosender und der Bundesliga-Spielplan. Kostenlos und ohne Anmeldung."
     />
     <meta name="twitter:image" content="https://wantedbeats-maker.github.io/roehre-preview/og-image.png" />
+    <style>
+      /* Starttext für Suchmaschinen: React ersetzt ihn beim Laden */
+      .boot-intro { max-width: 60rem; margin: 0 auto; padding: 3rem 1.5rem; color: #9a9aa6; font-size: 1rem; line-height: 1.6; }
+      .boot-intro h1 { color: #f4f4f6; font-size: 1.6rem; margin: 0 0 0.8rem; }
+      .boot-intro p { margin: 0 0 0.8rem; }
+      .boot-intro nav a { color: #4f8cff; margin-right: 1rem; text-decoration: none; }
+    </style>
     <script type="module">
 (function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const r of document.querySelectorAll('link[rel="modulepreload"]'))i(r);new MutationObserver(r=>{for(const n of r)if(n.type==="childList")for(const a of n.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&i(a)}).observe(document,{childList:!0,subtree:!0});function t(r){const n={};return r.integrity&&(n.integrity=r.integrity),r.referrerPolicy&&(n.referrerPolicy=r.referrerPolicy),r.crossOrigin==="use-credentials"?n.credentials="include":r.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function i(r){if(r.ep)return;r.ep=!0;const n=t(r);fetch(r.href,n)}})();var _g={exports:{}},Vo={},Dg={exports:{}},ge={};/**
  * @license React
@@ -138,7 +145,30 @@ Schedule: ${l.map(T=>vt(T))} pos: ${this.timelinePos}`),u.length&&this.log(`Remo
 </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main class="boot-intro">
+        <h1>TV-Röhre: Live-TV, Programm heute und Senderliste für Smart TV</h1>
+        <p>
+          TV-Röhre zeigt über 50 frei empfangbare Sender live, das Fernsehprogramm von heute aus
+          drei Quellen, rund 970 Radiosender, einen eigenen House-Ordner mit 24/7-Streams,
+          gemeinfreie Spielfilme mit deutscher Tonspur, Streamer aus DACH sowie die
+          Bundesliga- und DFB-Pokal-Spielpläne. Kostenlos, ohne Anmeldung, ohne Abo.
+        </p>
+        <p>
+          Die App läuft im Browser und auf Tizen, webOS und Android TV. Altersfreigaben und
+          Jugendschutzhinweise sind eingebaut. Wer mag, unterstützt die Weiterentwicklung mit einer
+          Spende; Sender und Streamer machen kostenlos mit.
+        </p>
+        <nav>
+          <a href="info.html">Über TV-Röhre</a>
+          <a href="hilfe.html">Hilfe</a>
+          <a href="jugendschutz.html">Jugendschutz</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="streamer.html">Für Streamer</a>
+        </nav>
+      </main>
+    </div>
     <noscript>
       <h1>TV-Röhre: Live-TV, Programm heute und Senderliste für Smart TV</h1>
       <p>
